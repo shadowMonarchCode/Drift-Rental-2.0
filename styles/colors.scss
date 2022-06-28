@@ -1,0 +1,28 @@
+$primary: #3ab0ff;
+$secondary: #079cff;
+$success: #64bc26;
+$error: #ea1601;
+$warning: #fad202;
+$white: #fff;
+$black: #444a51;
+
+$lighten: 10%;
+$darken: 15%;
+
+$colors: (
+    primary: (
+        base: $primary,
+        light: #e5f5ff,
+        dark: #000c1a,
+    ),
+    secondary: (
+        base: $secondary,
+        light: lighten($secondary, $lighten),
+        dark: darken($secondary, $darken),
+    ),
+);
+
+@function clr($base, $shade: base) {
+    $color: map-get(map-get($colors, $base), $shade);
+    @return $color;
+}
