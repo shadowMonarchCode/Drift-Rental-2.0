@@ -282,3 +282,143 @@ a {
         }
     }
 }
+
+// Auth Layout
+#auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .left-fixed {
+        height: 100%;
+        flex: 4;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+
+        background-image: url("https://www.fonewalls.com/wp-content/uploads/2021/06/Black-Car-Amoled-Wallpaper.jpg");
+        background-position: 20% 80%;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        color: clr(primary, light);
+        padding: 84px;
+
+        .logo {
+            height: 100px;
+            aspect-ratio: 3/2;
+            border: 1px solid;
+            position: absolute;
+            top: 42px;
+            background-color: clr(primary, light);
+        }
+
+        p {
+            font-size: 30px;
+            line-height: 36px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: 64px;
+            line-height: 72px;
+            font-weight: 500;
+            padding-top: 20px;
+        }
+    }
+
+    .auth {
+        height: 100%;
+        flex: 5;
+    }
+}
+
+.auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 24px;
+
+    h1 {
+        font-size: 36px;
+        line-height: 42px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+        // text-transform: capitalize;
+        margin-top: 12px;
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: 16px;
+        padding: 18px 24px;
+        background-color: darken(clr(primary, light), 3);
+        border-radius: 20px;
+
+        .input {
+            padding: 0px 0px 12px;
+
+            p {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 18px;
+                margin: 0px 0px 6px 12px;
+            }
+
+            input {
+                min-width: 270px;
+                border-radius: 8px;
+                border: 1px solid;
+                background-color: inherit;
+                padding: 12px 24px;
+
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+
+            .error{
+                margin: 4px 0px 0px 8px;
+                color: $error;
+            }
+        }
+
+        .btn {
+            border-radius: 12px;
+            color: clr(primary, light);
+            background-color: $primary;
+            padding: 12px 24px;
+            margin: 20px 0px 8px;
+
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 24px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    }
+
+    span {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 24px;
+        flex: 1;
+
+        .link {
+            font-weight: 400;
+            text-decoration: underline;
+        }
+    }
+}

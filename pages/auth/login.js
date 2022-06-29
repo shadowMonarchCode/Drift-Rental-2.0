@@ -1,13 +1,17 @@
 import React from "react";
+import LoginPage from "../../components/Login.jsx";
 
 const Login = () => {
   return (
     <div id="auth">
-      <div className="container">
-        <div className="slider-box"></div>
-        <div className="login"></div>
-        <div className="signin"></div>
-      </div>
+        <div className="left-fixed">
+          <div className="logo"></div>
+          <p>Welcome to</p>
+          <h1>Drift Rental</h1>
+        </div>
+        {/* <div><Image src={design} alt="Design" /></div> */}
+        <LoginPage />
+        {/* <div><Image src={design} alt="Design" /></div> */}
     </div>
   );
 };
